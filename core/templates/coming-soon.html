@@ -20,8 +20,8 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" type="text/css">
     <!-- Theme css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/coming-soon-page.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/whatsapp-chat.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/coming-soon-page.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/whatsapp-chat.css' %}">
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                 <div class="particles-bg" id="particles-js">
                     <div class="content-detail">
                         <div class="logo">
-                            <img src="assets/images/logo.png" alt="logo">
+                            <img src="{% static 'assets/images/logo.png' %}" alt="logo">
                         </div>
                         <!-- Countdown -->
                         <div id="timer" data-date="September 30, 2024 19:15:10 PDT"></div>
@@ -76,7 +76,7 @@
                             <div class="d-flex bd-highlight">
                                 <!-- Profile Picture -->
                                 <div class="er-img-cont">
-                                    <img src="assets/images/profile_01.jpg" class="er-user-img" alt="Profile image">
+                                    <img src="{% static 'assets/images/profile_01.jpg' %}" class="er-user-img" alt="Profile image">
                                     <span class="er-status-icon"></span>
                                 </div>
                                 <!-- Display Name & Last Seen -->
@@ -99,7 +99,7 @@
                             <div class="d-flex bd-highlight">
                                 <!-- Profile Picture -->
                                 <div class="er-img-cont">
-                                    <img src="assets/images/profile_02.jpg" class="er-user-img" alt="Profile image">
+                                    <img src="{% static 'assets/images/profile_02.jpg' %}" class="er-user-img" alt="Profile image">
                                     <span class="er-status-icon er-online"></span>
                                 </div>
                                 <!-- Display Name & Last Seen -->
