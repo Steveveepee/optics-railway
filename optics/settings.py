@@ -19,7 +19,6 @@ from decouple import Config, RepositoryEnv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-config = Config()
 
 # Check if a .env file exists and load it if it does
 # if os.path.isfile(os.path.join(BASE_DIR, ".env")):
