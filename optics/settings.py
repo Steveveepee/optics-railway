@@ -14,7 +14,7 @@ import os
 from pathlib import Path
 
 # Use python decouple package to store sensitive information in .env file for development but still read from environment variables in production.
-from decouple import Config, RepositoryEnv
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
