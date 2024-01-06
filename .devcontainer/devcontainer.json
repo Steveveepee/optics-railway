@@ -21,6 +21,8 @@
 		}
 	}
 
+	"postCreateCommand": "apt-get update && apt-get install -y git",
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
