@@ -19,12 +19,14 @@ from decouple import Config, RepositoryEnv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+config = Config()
+
 # Check if a .env file exists and load it if it does
-if os.path.isfile(os.path.join(BASE_DIR, ".env")):
-    env_file = os.path.join(BASE_DIR, ".env")
-    config = Config(RepositoryEnv(env_file))
-else:
-    config = Config()
+# if os.path.isfile(os.path.join(BASE_DIR, ".env")):
+#     env_file = os.path.join(BASE_DIR, ".env")
+#     config = Config(RepositoryEnv(env_file))
+# else:
+#     config = Config()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
