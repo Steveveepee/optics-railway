@@ -4,4 +4,21 @@ gunicorn==20.1.0
 psycopg2-binary
 sqlparse==0.4.2
 whitenoise==6.2.0
+
+# Used to separate env variables from .env files needed for development
 python-decouple
+
+# Used to resize images when uploaded to OPTICS.
+django-resized
+
+# Used to upload images
+Pillow
+
+# Used to interact with APIs outside of OPTICS (such as Discord)
+requests
+
+# Used for PDF generation
+xhtml2pdf
+
+
+
