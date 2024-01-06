@@ -25,4 +25,4 @@ RUN pip install -r requirements.txt
 EXPOSE 8000
 
 # Command to run the application
-CMD ["gunicorn", "myproject.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "optics.wsgi:application", "--bind", "0.0.0.0:8000"]
