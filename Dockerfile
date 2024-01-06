@@ -19,8 +19,5 @@ RUN pip install -r requirements.txt
 # Copy in everything else
 COPY . ./
 
-# Port where the Django app runs
-EXPOSE 8000
-
-# Populate database and start server
-CMD python3 manage.py migrate; python3 manage.py collectstatic --no-input; python3 manage.py loaddata website/fixtures/initial.json; gunicorn mywebsite.wsgi --bind 0.0.0.0:8000
+# During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
+CMD gunicorn --bind 0.0.0.0:${PORT-8000} optics.wsgi
