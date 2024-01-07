@@ -17,6 +17,7 @@
 				"ms-python.black-formatter",
 				"ms-python.vscode-pylance",
 				"ms-python.black-formatter",
+				"ms-python.flake8-lint",
 			]
 		}
 	}
