@@ -94,11 +94,11 @@ WSGI_APPLICATION = "optics.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": config("PGDATABASE"),
-        "USER": config("PGUSER"),
-        "PASSWORD": config("PGPASSWORD"),
-        "HOST": config("PGHOST"),
-        "PORT": config("PGPORT"),
+        "NAME": config("LOCAL_PGDATABASE"),
+        "USER": config("LOCAL_PGUSER"),
+        "PASSWORD": config("LOCAL_PGPASSWORD"),
+        "HOST": config("LOCAL_PGHOST"),
+        "PORT": config("LOCAL_PGPORT"),
     }
 }
 
